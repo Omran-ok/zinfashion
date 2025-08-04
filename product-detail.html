@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="de">
+    <meta name="description" content="Elegantes Kleid - Zin Fashion. Premium Mode für Damen. Entdecken Sie unsere exklusive Kollektion.">
+    <meta name="keywords" content="Elegantes Kleid, Damenmode, Fashion, Online Shop">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Elegantes Kleid - Zin Fashion">
+    <meta property="og:description" content="Entdecken Sie unser elegantes Kleid in Premium-Qualität. Verfügbar in verschiedenen Farben und Größen.">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://zinfashion.de/products/elegantes-kleid">
+    <title>Elegantes Kleid - Zin Fashion</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product-detail.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-content">
+                    <span class="info-text" data-i18n="free-shipping">Kostenloser Versand ab 50€</span>
+                    <div class="header-controls">
+                        <div class="language-selector">
+                            <button class="lang-btn active" data-lang="de">DE</button>
+                            <button class="lang-btn" data-lang="en">EN</button>
+                            <button class="lang-btn" data-lang="ar">AR</button>
+                        </div>
+                        <div class="theme-selector">
+                            <button class="theme-btn" data-theme="light" title="Light Mode">☀️</button>
+                            <button class="theme-btn" data-theme="dark" title="Dark Mode">🌙</button>
+                            <button class="theme-btn active" data-theme="auto" title="System Mode">💻</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <a href="index.html" class="logo">
+                        <div class="logo-placeholder"><img src="images/logo.svg" alt="Zin Fashion Logo" class="logo-img"></div>
+                        <span class="logo-text">ZIN Fashion</span>
+                    </a>
+                    
+                    <div class="search-bar">
+                        <input type="search" class="search-input" placeholder="Suche nach Produkten..." data-i18n-placeholder="search-placeholder">
+                        <button class="search-btn">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="header-actions">
+                        <a href="#" class="header-action">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
+                            </svg>
+                            <span class="header-action-label" data-i18n="account">Konto</span>
+                        </a>
+                        <a href="#" class="header-action" id="wishlistIcon">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                            <span class="header-action-label" data-i18n="wishlist">Wunschliste</span>
+                            <span class="wishlist-count">0</span>
+                        </a>
+                        <a href="#" class="header-action" id="cartIcon">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                            </svg>
+                            <span class="header-action-label" data-i18n="cart">Warenkorb</span>
+                            <span class="cart-count">0</span>
+                        </a>
+                        <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav">
+            <div class="container">
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" data-i18n="home">Startseite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" data-i18n="women">Damen</a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-link" data-i18n="dresses">Kleider</a>
+                            <a href="#" class="dropdown-link" data-i18n="tops">Oberteile</a>
+                            <a href="#" class="dropdown-link" data-i18n="pants">Hosen</a>
+                            <a href="#" class="dropdown-link" data-i18n="shoes">Schuhe</a>
+                            <a href="#" class="dropdown-link" data-i18n="accessories">Accessoires</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-i18n="men">Herren</a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-link" data-i18n="shirts">Hemden</a>
+                            <a href="#" class="dropdown-link" data-i18n="t-shirts">T-Shirts</a>
+                            <a href="#" class="dropdown-link" data-i18n="pants">Hosen</a>
+                            <a href="#" class="dropdown-link" data-i18n="shoes">Schuhe</a>
+                            <a href="#" class="dropdown-link" data-i18n="accessories">Accessoires</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-i18n="kids">Kinder</a>
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-link" data-i18n="girls">Mädchen</a>
+                            <a href="#" class="dropdown-link" data-i18n="boys">Jungen</a>
+                            <a href="#" class="dropdown-link" data-i18n="babies">Babys</a>
+                            <a href="#" class="dropdown-link" data-i18n="shoes">Schuhe</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-i18n="sale">Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-i18n="about">Über uns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-i18n="contact">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html" data-i18n="home">Startseite</a>
+            <span>/</span>
+            <a href="#" data-i18n="women">Damen</a>
+            <span>/</span>
+            <a href="#" data-i18n="dresses">Kleider</a>
+            <span>/</span>
+            <span class="current" data-i18n="product-1-name">Elegantes Kleid</span>
+        </div>
+    </div>
+
+    <!-- Product Detail -->
+    <section class="product-detail">
+        <div class="container">
+            <div class="product-detail-grid">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="product-gallery">
+                        <div class="main-image-container">
+                            <div class="product-badge" data-i18n="badge-new">NEU</div>
+                            <img src="images/product-1-main.jpg" alt="Elegantes Kleid" class="main-image" id="mainImage">
+                            <button class="zoom-btn" id="zoomBtn">
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                                    <path d="M12 10h-2v2H9v-2H7V9h2V7h1v2h2v1z"/>
+                                </svg>
+                            </button>
+                            <div class="image-placeholder">HAUPTBILD</div>
+                        </div>
+                        <div class="thumbnail-list">
+                            <div class="thumbnail active" data-image="1">
+                                <div class="image-placeholder">BILD 1</div>
+                            </div>
+                            <div class="thumbnail" data-image="2">
+                                <div class="image-placeholder">BILD 2</div>
+                            </div>
+                            <div class="thumbnail" data-image="3">
+                                <div class="image-placeholder">BILD 3</div>
+                            </div>
+                            <div class="thumbnail" data-image="4">
+                                <div class="image-placeholder">BILD 4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info -->
+                <div class="product-info-detail">
+                    <h1 class="product-title" data-i18n="product-1-name">Elegantes Kleid</h1>
+                    <div class="product-meta">
+                        <span class="product-sku">Art.-Nr.: ZF-2024-001</span>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <span class="rating-text">(4.0) 23 <span data-i18n="reviews">Bewertungen</span></span>
+                        </div>
+                    </div>
+
+                    <div class="product-price-detail">
+                        <span class="price-detail">€89,99</span>
+                        <span class="price-info" data-i18n="incl-vat">inkl. MwSt.</span>
+                    </div>
+
+                    <div class="product-description">
+                        <p data-i18n="product-1-description">
+                            Unser elegantes Kleid vereint zeitlose Eleganz mit modernem Design. 
+                            Gefertigt aus hochwertigen Materialien, bietet es höchsten Tragekomfort 
+                            und eine perfekte Passform für jeden Anlass.
+                        </p>
+                    </div>
+
+                    <!-- Color Selection -->
+                    <div class="product-option">
+                        <label class="option-label">
+                            <span data-i18n="color">Farbe</span>: 
+                            <span class="selected-color" id="selectedColor">Gold</span>
+                        </label>
+                        <div class="color-options">
+                            <div class="color-option active" data-color="Gold" style="background-color: #aa813f;"></div>
+                            <div class="color-option" data-color="Schwarz" style="background-color: #000;"></div>
+                            <div class="color-option" data-color="Creme" style="background-color: #e1dedc;"></div>
+                        </div>
+                    </div>
+
+                    <!-- Size Selection -->
+                    <div class="product-option">
+                        <div class="size-header">
+                            <label class="option-label">
+                                <span data-i18n="size">Größe</span>: 
+                                <span class="selected-size" id="selectedSize">-</span>
+                            </label>
+                            <button class="size-guide-btn" onclick="openSizeGuide()">
+                                <svg class="icon" viewBox="0 0 24 24">
+                                    <path d="M7 7h10v2H7zm0 4h7v2H7z"/>
+                                    <path d="M20.5 3h-17C2.67 3 2 3.67 2 4.5v15c0 .83.67 1.5 1.5 1.5H12v-2H4V7h16v8h2V4.5c0-.83-.67-1.5-1.5-1.5z"/>
+                                    <path d="M16 13l-3 3 1.41 1.41L17 14.83V23h2v-8.17l2.59 2.58L23 16z"/>
+                                </svg>
+                                <span data-i18n="size-guide">Größentabelle</span>
+                            </button>
+                        </div>
+                        <div class="size-options">
+                            <button class="size-option" data-size="XS" data-stock="3">XS</button>
+                            <button class="size-option" data-size="S" data-stock="5">S</button>
+                            <button class="size-option" data-size="M" data-stock="8">M</button>
+                            <button class="size-option" data-size="L" data-stock="2">L</button>
+                            <button class="size-option" data-size="XL" data-stock="0" disabled>XL</button>
+                            <button class="size-option" data-size="XXL" data-stock="4">XXL</button>
+                        </div>
+                        <div class="size-stock-info" id="stockInfo"></div>
+                    </div>
+
+                    <!-- Quantity and Add to Cart -->
+                    <div class="product-actions-detail">
+                        <div class="quantity-selector">
+                            <label class="option-label" data-i18n="quantity">Menge</label>
+                            <div class="quantity-controls">
+                                <button class="quantity-btn" onclick="updateQuantity(-1)">-</button>
+                                <input type="number" class="quantity-input" id="quantityInput" value="1" min="1" max="10">
+                                <button class="quantity-btn" onclick="updateQuantity(1)">+</button>
+                            </div>
+                        </div>
+                        <button class="add-to-cart-detail" id="addToCartDetail" data-i18n="add-to-cart">In den Warenkorb</button>
+                        <button class="wishlist-btn" id="wishlistBtn">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Product Features -->
+                    <div class="product-features">
+                        <div class="feature">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            <span data-i18n="premium-quality">Premium Qualität</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+                            </svg>
+                            <span data-i18n="fast-delivery">Schnelle Lieferung</span>
+                        </div>
+                        <div class="feature">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                            </svg>
+                            <span data-i18n="secure-payment">Sichere Zahlung</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="description" data-i18n="description">Beschreibung</button>
+                    <button class="tab-button" data-tab="details" data-i18n="details">Details</button>
+                    <button class="tab-button" data-tab="shipping" data-i18n="shipping-returns">Versand & Rückgabe</button>
+                    <button class="tab-button" data-tab="reviews" data-i18n="reviews-tab">Bewertungen (23)</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description">
+                        <h3 data-i18n="product-description-title">Produktbeschreibung</h3>
+                        <p data-i18n="product-description-text">
+                            Dieses elegante Kleid ist die perfekte Wahl für besondere Anlässe. 
+                            Mit seinem zeitlosen Design und der hochwertigen Verarbeitung werden Sie 
+                            garantiert alle Blicke auf sich ziehen. Das Kleid ist aus einem angenehmen 
+                            Materialmix gefertigt, der für optimalen Tragekomfort sorgt.
+                        </p>
+                        <h4 data-i18n="highlights">Highlights:</h4>
+                        <ul>
+                            <li data-i18n="highlight-1">Eleganter Schnitt mit perfekter Passform</li>
+                            <li data-i18n="highlight-2">Hochwertige Materialien für maximalen Komfort</li>
+                            <li data-i18n="highlight-3">Vielseitig kombinierbar für verschiedene Anlässe</li>
+                            <li data-i18n="highlight-4">Pflegeleicht und langlebig</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" id="details">
+                        <h3 data-i18n="product-details-title">Produktdetails</h3>
+                        <table class="details-table">
+                            <tr>
+                                <td data-i18n="material">Material:</td>
+                                <td>95% Polyester, 5% Elasthan</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="care">Pflege:</td>
+                                <td data-i18n="care-instructions">Maschinenwäsche bei 30°C</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="fit">Passform:</td>
+                                <td data-i18n="fit-regular">Regular Fit</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="length">Länge:</td>
+                                <td data-i18n="length-knee">Knielang</td>
+                            </tr>
+                            <tr>
+                                <td data-i18n="made-in">Hergestellt in:</td>
+                                <td>EU</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane" id="shipping">
+                        <h3 data-i18n="shipping-info-title">Versandinformationen</h3>
+                        <p data-i18n="shipping-info-text">
+                            Wir bieten schnellen und zuverlässigen Versand. Bei Bestellungen über 50€ 
+                            ist der Versand kostenlos. Die Lieferzeit beträgt in der Regel 2-3 Werktage.
+                        </p>
+                        <h4 data-i18n="return-policy">Rückgaberecht</h4>
+                        <p data-i18n="return-policy-text">
+                            Sie haben 30 Tage Zeit, um Ihre Bestellung zurückzugeben. Die Artikel müssen 
+                            ungetragen und mit allen Etiketten versehen sein. Die Rücksendekosten trägt der Käufer.
+                        </p>
+                    </div>
+                    <div class="tab-pane" id="reviews">
+                        <h3 data-i18n="customer-reviews">Kundenbewertungen</h3>
+                        <div class="reviews-summary">
+                            <div class="rating-summary">
+                                <div class="big-rating">4.0</div>
+                                <div class="stars">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                                <p>23 <span data-i18n="reviews">Bewertungen</span></p>
+                            </div>
+                            <button class="write-review-btn" data-i18n="write-review">Bewertung schreiben</button>
+                        </div>
+                        <div class="review-list">
+                            <div class="review">
+                                <div class="review-header">
+                                    <strong>Maria S.</strong>
+                                    <div class="stars small">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                    </div>
+                                </div>
+                                <p class="review-date">15.01.2025</p>
+                                <p class="review-text" data-i18n="review-1">
+                                    Wunderschönes Kleid! Die Qualität ist hervorragend und es sitzt perfekt. 
+                                    Sehr zu empfehlen!
+                                </p>
+                            </div>
+                            <div class="review">
+                                <div class="review-header">
+                                    <strong>Anna K.</strong>
+                                    <div class="stars small">
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star filled">★</span>
+                                        <span class="star">★</span>
+                                    </div>
+                                </div>
+                                <p class="review-date">10.01.2025</p>
+                                <p class="review-text" data-i18n="review-2">
+                                    Schönes Kleid, aber die Größe fällt etwas klein aus. 
+                                    Ansonsten bin ich sehr zufrieden.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products -->
+            <section class="related-products">
+                <h2 class="section-title" data-i18n="related-products">Ähnliche Produkte</h2>
+                <div class="product-grid">
+                    <!-- Product Card 1 -->
+                    <div class="product-card">
+                        <a href="product-detail.html?id=related-1" class="product-image-link">
+                            <div class="product-image">
+                                <div class="product-placeholder">ÄHNLICH 1</div>
+                                <div class="product-actions">
+                                    <button class="action-btn" title="Zur Wunschliste">
+                                        <svg class="icon" viewBox="0 0 24 24">
+                                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                        </svg>
+                                    </button>
+                                    <button class="action-btn quick-view" title="Schnellansicht" data-product-id="related-1">
+                                        <svg class="icon" viewBox="0 0 24 24">
+                                            <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="product-info">
+                            <a href="product-detail.html?id=related-1" class="product-name-link">
+                                <h3 class="product-name" data-i18n="related-1-name">Sommerkleid</h3>
+                            </a>
+                            <div class="product-price">
+                                <span class="price">€79,99</span>
+                            </div>
+                            <div class="product-colors">
+                                <span class="color-swatch" style="background-color: #FF6B6B;"></span>
+                                <span class="color-swatch" style="background-color: #4ECDC4;"></span>
+                                <span class="color-swatch" style="background-color: #FFE66D;"></span>
+                            </div>
+                            <button class="add-to-cart" data-i18n="add-to-cart">In den Warenkorb</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="product-placeholder">ÄHNLICH 2</div>
+                            <span class="product-badge" style="background-color: #d32f2f;" data-i18n="badge-sale">-20%</span>
+                            <div class="product-actions">
+                                <button class="action-btn" title="Zur Wunschliste">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn" title="Schnellansicht">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" data-i18n="related-2-name">Abendkleid</h3>
+                            <div class="product-price">
+                                <span class="price">€99,99</span>
+                                <span class="old-price">€124,99</span>
+                            </div>
+                            <div class="product-colors">
+                                <span class="color-swatch" style="background-color: #000;"></span>
+                                <span class="color-swatch" style="background-color: #800020;"></span>
+                            </div>
+                            <button class="add-to-cart" data-i18n="add-to-cart">In den Warenkorb</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="product-placeholder">ÄHNLICH 3</div>
+                            <div class="product-actions">
+                                <button class="action-btn" title="Zur Wunschliste">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn" title="Schnellansicht">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" data-i18n="related-3-name">Cocktailkleid</h3>
+                            <div class="product-price">
+                                <span class="price">€69,99</span>
+                            </div>
+                            <div class="product-colors">
+                                <span class="color-swatch" style="background-color: #e1dedc;"></span>
+                                <span class="color-swatch" style="background-color: #FFC0CB;"></span>
+                                <span class="color-swatch" style="background-color: #87CEEB;"></span>
+                            </div>
+                            <button class="add-to-cart" data-i18n="add-to-cart">In den Warenkorb</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <div class="product-placeholder">ÄHNLICH 4</div>
+                            <span class="product-badge" data-i18n="badge-new">NEU</span>
+                            <div class="product-actions">
+                                <button class="action-btn" title="Zur Wunschliste">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn" title="Schnellansicht">
+                                    <svg class="icon" viewBox="0 0 24 24">
+                                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name" data-i18n="related-4-name">Maxikleid</h3>
+                            <div class="product-price">
+                                <span class="price">€109,99</span>
+                            </div>
+                            <div class="product-colors">
+                                <span class="color-swatch" style="background-color: #aa813f;"></span>
+                                <span class="color-swatch" style="background-color: #008080;"></span>
+                            </div>
+                            <button class="add-to-cart" data-i18n="add-to-cart">In den Warenkorb</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Size Guide Modal -->
+    <div class="modal-overlay" id="sizeGuideModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 data-i18n="size-guide">Größentabelle</h2>
+                <button class="modal-close" onclick="closeSizeGuide()">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-content">
+                <h3 data-i18n="womens-sizes">Damengrößen</h3>
+                <table class="size-table">
+                    <thead>
+                        <tr>
+                            <th data-i18n="size">Größe</th>
+                            <th data-i18n="chest">Brust (cm)</th>
+                            <th data-i18n="waist">Taille (cm)</th>
+                            <th data-i18n="hips">Hüfte (cm)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>XS</td>
+                            <td>82-85</td>
+                            <td>63-66</td>
+                            <td>88-91</td>
+                        </tr>
+                        <tr>
+                            <td>S</td>
+                            <td>86-89</td>
+                            <td>67-70</td>
+                            <td>92-95</td>
+                        </tr>
+                        <tr>
+                            <td>M</td>
+                            <td>90-93</td>
+                            <td>71-74</td>
+                            <td>96-99</td>
+                        </tr>
+                        <tr>
+                            <td>L</td>
+                            <td>94-97</td>
+                            <td>75-78</td>
+                            <td>100-103</td>
+                        </tr>
+                        <tr>
+                            <td>XL</td>
+                            <td>98-101</td>
+                            <td>79-82</td>
+                            <td>104-107</td>
+                        </tr>
+                        <tr>
+                            <td>XXL</td>
+                            <td>102-105</td>
+                            <td>83-86</td>
+                            <td>108-111</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="size-guide-tips">
+                    <h4 data-i18n="measuring-tips">Messtipps:</h4>
+                    <ul>
+                        <li data-i18n="tip-1">Messen Sie über Ihrer Unterwäsche</li>
+                        <li data-i18n="tip-2">Halten Sie das Maßband gerade und fest, aber nicht zu eng</li>
+                        <li data-i18n="tip-3">Wenn Sie zwischen zwei Größen liegen, wählen Sie die größere</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Zoom Modal -->
+    <div class="modal-overlay" id="imageZoomModal">
+        <div class="zoom-modal">
+            <button class="modal-close" onclick="closeZoom()">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+            </button>
+            <img src="" alt="Zoomed image" id="zoomedImage">
+        </div>
+    </div>
+
+    <!-- Cart Modal (same as index.html) -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-modal" id="cartModal">
+        <!-- Cart content same as index.html -->
+    </div>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-i18n="about-us">Über Uns</h3>
+                    <p data-i18n="about-text">Zin Fashion bietet hochwertige Mode für die ganze Familie. Qualität, Stil und Nachhaltigkeit stehen bei uns im Mittelpunkt.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" title="Twitter">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-i18n="customer-service">Kundenservice</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="shipping">Versand & Lieferung</a></li>
+                        <li><a href="#" data-i18n="returns">Rückgabe & Umtausch</a></li>
+                        <li><a href="#" data-i18n="size-guide">Größentabelle</a></li>
+                        <li><a href="#" data-i18n="faq">FAQ</a></li>
+                        <li><a href="#" data-i18n="contact-us">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-i18n="information">Informationen</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-i18n="about-link">Über uns</a></li>
+                        <li><a href="#" data-i18n="privacy">Datenschutz</a></li>
+                        <li><a href="#" data-i18n="terms">AGB</a></li>
+                        <li><a href="#" data-i18n="imprint">Impressum</a></li>
+                        <li><a href="#" data-i18n="careers">Karriere</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 data-i18n="payment-shipping">Zahlung & Versand</h3>
+                    <p data-i18n="payment-methods">Wir akzeptieren:</p>
+                    <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
+                        <span style="padding: 5px 10px; background: var(--bg-secondary); border-radius: 4px;">Visa</span>
+                        <span style="padding: 5px 10px; background: var(--bg-secondary); border-radius: 4px;">Mastercard</span>
+                        <span style="padding: 5px 10px; background: var(--bg-secondary); border-radius: 4px;">PayPal</span>
+                        <span style="padding: 5px 10px; background: var(--bg-secondary); border-radius: 4px;">Klarna</span>
+                    </div>
+                    <p style="margin-top: 15px;" data-i18n="shipping-partners">Versandpartner: DHL, UPS</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 ZIN Fashion. <span data-i18n="all-rights">Alle Rechte vorbehalten</span>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/product-detail.js"></script>
+</body>
+</html>
