@@ -56,25 +56,25 @@
                     </div>
 
                     <div class="header-actions">
-                        <a href="#" class="header-action">
+                        <a href="/login" class="header-action">
                             <svg class="icon" viewBox="0 0 24 24">
                                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
                             </svg>
                             <span class="header-action-label" data-i18n="account">Konto</span>
                         </a>
-                        <a href="#" class="header-action">
+                        <a href="/wishlist" class="header-action">
                             <svg class="icon" viewBox="0 0 24 24">
                                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                             </svg>
                             <span class="header-action-label" data-i18n="wishlist">Wunschliste</span>
-                            <span class="wishlist-count">0</span>
+                            <span class="wishlist-count" style="display: none;">0</span>
                         </a>
-                        <a href="#" class="header-action" id="cartIcon">
+                        <a href="/cart" class="header-action" id="cartIcon">
                             <svg class="icon" viewBox="0 0 24 24">
                                 <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
                             </svg>
                             <span class="header-action-label" data-i18n="cart">Warenkorb</span>
-                            <span class="cart-count">0</span>
+                            <span class="cart-count" style="display: none;">0</span>
                         </a>
                         <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
                             <svg class="icon" viewBox="0 0 24 24">
@@ -90,45 +90,35 @@
             <div class="container">
                 <ul class="nav-menu" id="navMenu">
                     <li class="nav-item">
-                        <a href="#" class="nav-link active" data-i18n="home">Startseite</a>
+                        <a href="/" class="nav-link active" data-i18n="home">Startseite</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" data-i18n="women">Damen</a>
+                        <a href="/products/damen" class="nav-link" data-i18n="women">Damen</a>
                         <div class="dropdown">
-                            <a href="#" class="dropdown-link" data-i18n="dresses">Kleider</a>
-                            <a href="#" class="dropdown-link" data-i18n="tops">Oberteile</a>
-                            <a href="#" class="dropdown-link" data-i18n="pants">Hosen</a>
-                            <a href="#" class="dropdown-link" data-i18n="shoes">Schuhe</a>
-                            <a href="#" class="dropdown-link" data-i18n="accessories">Accessoires</a>
+                            <a href="/products/damen-tshirts" class="dropdown-link" data-i18n="t-shirts">T-Shirts</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" data-i18n="men">Herren</a>
+                        <a href="/products/herren" class="nav-link" data-i18n="men">Herren</a>
                         <div class="dropdown">
-                            <a href="#" class="dropdown-link" data-i18n="shirts">Hemden</a>
-                            <a href="#" class="dropdown-link" data-i18n="t-shirts">T-Shirts</a>
-                            <a href="#" class="dropdown-link" data-i18n="pants">Hosen</a>
-                            <a href="#" class="dropdown-link" data-i18n="shoes">Schuhe</a>
-                            <a href="#" class="dropdown-link" data-i18n="accessories">Accessoires</a>
+                            <a href="/products/herren-tshirts" class="dropdown-link" data-i18n="t-shirts">T-Shirts</a>
+                            <a href="/products/herren-hosen" class="dropdown-link" data-i18n="pants">Hosen</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" data-i18n="kids">Kinder</a>
+                        <a href="/products/kinder" class="nav-link" data-i18n="kids">Kinder</a>
                         <div class="dropdown">
-                            <a href="#" class="dropdown-link" data-i18n="girls">Mädchen</a>
-                            <a href="#" class="dropdown-link" data-i18n="boys">Jungen</a>
-                            <a href="#" class="dropdown-link" data-i18n="babies">Babys</a>
-                            <a href="#" class="dropdown-link" data-i18n="shoes">Schuhe</a>
+                            <a href="/products/kinder-tshirts" class="dropdown-link" data-i18n="t-shirts">T-Shirts</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" data-i18n="sale">Sale</a>
+                        <a href="/products?sale=true" class="nav-link" data-i18n="sale">Sale</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" data-i18n="about">Über uns</a>
+                        <a href="/about" class="nav-link" data-i18n="about">Über uns</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" data-i18n="contact">Kontakt</a>
+                        <a href="/contact" class="nav-link" data-i18n="contact">Kontakt</a>
                     </li>
                 </ul>
             </div>
@@ -138,12 +128,11 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-placeholder">
-            <!-- Replace with actual hero image -->
-        </div>
-        <div class="hero-content">
-            <h1 class="hero-title" data-i18n="hero-title">Neue Kollektion</h1>
-            <p class="hero-subtitle" data-i18n="hero-subtitle">Entdecken Sie Mode, die Ihre Persönlichkeit unterstreicht</p>
-            <a href="#" class="cta-btn" data-i18n="shop-now">Jetzt Einkaufen</a>
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero-title">Neue Kollektion</h1>
+                <p class="hero-subtitle" data-i18n="hero-subtitle">Entdecken Sie Mode, die Ihre Persönlichkeit unterstreicht</p>
+                <a href="/products" class="hero-btn" data-i18n="shop-now">Jetzt Einkaufen</a>
+            </div>
         </div>
     </section>
 
@@ -152,209 +141,51 @@
         <div class="container">
             <h2 class="section-title" data-i18n="categories">Kategorien</h2>
             <div class="category-grid">
-                <div class="category-card category-card-women">
-                    <div class="category-overlay">
-                        <h3 class="category-name" data-i18n="women">Damen</h3>
-                        <p class="category-count" data-i18n="women-count">500+ Produkte</p>
+                <a href="/products/damen" class="category-card">
+                    <div class="category-image" style="background-image: url('images/women-category.jpg');">
+                        <div class="category-overlay">
+                            <h3 class="category-title" data-i18n="women">Damen</h3>
+                            <p class="category-count">T-Shirts</p>
+                        </div>
                     </div>
-                </div>
-                <div class="category-card category-card-men">
-                    <div class="category-overlay">
-                        <h3 class="category-name" data-i18n="men">Herren</h3>
-                        <p class="category-count" data-i18n="men-count">400+ Produkte</p>
+                </a>
+                <a href="/products/herren" class="category-card">
+                    <div class="category-image" style="background-image: url('images/men-category.jpg');">
+                        <div class="category-overlay">
+                            <h3 class="category-title" data-i18n="men">Herren</h3>
+                            <p class="category-count">T-Shirts & Hosen</p>
+                        </div>
                     </div>
-                </div>
-                <div class="category-card category-card-kids">
-                    <div class="category-overlay">
-                        <h3 class="category-name" data-i18n="kids">Kinder</h3>
-                        <p class="category-count" data-i18n="kids-count">300+ Produkte</p>
+                </a>
+                <a href="/products/kinder" class="category-card">
+                    <div class="category-image" style="background-image: url('images/kids-category.jpg');">
+                        <div class="category-overlay">
+                            <h3 class="category-title" data-i18n="kids">Kinder</h3>
+                            <p class="category-count">T-Shirts</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
+    <!-- Featured Products Section -->
     <section class="products">
         <div class="container">
-            <h2 class="section-title" data-i18n="featured-products">Ausgewählte Produkte</h2>
-            
-            <div class="filter-bar">
-                <div class="filter-group">
-                    <button class="filter-btn active" data-i18n="all">Alle</button>
-                    <button class="filter-btn" data-i18n="new">Neu</button>
-                    <button class="filter-btn" data-i18n="sale">Sale</button>
-                    <button class="filter-btn" data-i18n="bestseller">Bestseller</button>
-                </div>
-                <div class="filter-controls">
-                    <div class="price-filter">
-                        <button class="price-filter-btn" onclick="togglePriceFilter()">
-                            <svg class="icon" viewBox="0 0 24 24" width="16" height="16">
-                                <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
-                            </svg>
-                            <span data-i18n="price-filter">Preis</span>
-                        </button>
-                        <div class="price-filter-dropdown" id="priceFilterDropdown">
-                            <div class="price-range-inputs">
-                                <input type="number" class="price-input" id="minPrice" placeholder="Min €" min="0" max="200" value="0">
-                                <span>-</span>
-                                <input type="number" class="price-input" id="maxPrice" placeholder="Max €" min="0" max="200" value="200">
-                            </div>
-                            <button class="apply-price-btn" onclick="applyPriceFilter()" data-i18n="apply">Anwenden</button>
-                        </div>
-                    </div>
-                    <select class="sort-select">
-                        <option value="featured" data-i18n="sort-featured">Empfohlen</option>
-                        <option value="price-asc" data-i18n="sort-price-asc">Preis aufsteigend</option>
-                        <option value="price-desc" data-i18n="sort-price-desc">Preis absteigend</option>
-                        <option value="newest" data-i18n="sort-newest">Neueste</option>
-                    </select>
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="featured-products">Ausgewählte Produkte</h2>
+                <div class="product-tabs">
+                    <button class="tab-btn active" data-filter="all" data-i18n="all">Alle</button>
+                    <button class="tab-btn" data-filter="new" data-i18n="new">Neu</button>
+                    <button class="tab-btn" data-filter="bestseller" data-i18n="bestseller">Bestseller</button>
+                    <button class="tab-btn" data-filter="sale" data-i18n="sale">Sale</button>
                 </div>
             </div>
-
-            <div class="product-grid">
-                <!-- Product Card 1 -->
-                <div class="product-card">
-                    <a href="product-detail.html?id=product-1" class="product-image-link">
-                        <div class="product-image">
-                            <div class="product-placeholder">PRODUKT BILD 1</div>
-                            <span class="product-badge" data-i18n="badge-new">NEU</span>
-                            <div class="product-actions">
-                                <button class="action-btn" title="Zur Wunschliste">
-                                    <svg class="icon" viewBox="0 0 24 24">
-                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                                    </svg>
-                                </button>
-                                <button class="action-btn quick-view" title="Schnellansicht" data-product-id="product-1">
-                                    <svg class="icon" viewBox="0 0 24 24">
-                                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="product-info">
-                        <a href="product-detail.html?id=product-1" class="product-name-link">
-                            <h3 class="product-name" data-i18n="product-1-name">Elegantes Kleid</h3>
-                        </a>
-                        <div class="product-price">
-                            <span class="price">€89,99</span>
-                        </div>
-                        <div class="product-colors">
-                            <span class="color-swatch" style="background-color: #aa813f;"></span>
-                            <span class="color-swatch" style="background-color: #000;"></span>
-                            <span class="color-swatch" style="background-color: #e1dedc;"></span>
-                        </div>
-                        <button class="add-to-cart" data-i18n="add-to-cart">In den Warenkorb</button>
-                    </div>
-                </div>
-
-                <!-- Product Card 2 -->
-                <div class="product-card">
-                    <a href="product-detail.html?id=product-2" class="product-image-link">
-                        <div class="product-image">
-                            <div class="product-placeholder">PRODUKT BILD 2</div>
-                            <span class="product-badge" style="background-color: #d32f2f;" data-i18n="badge-sale">-30%</span>
-                            <div class="product-actions">
-                                <button class="action-btn" title="Zur Wunschliste">
-                                    <svg class="icon" viewBox="0 0 24 24">
-                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                                    </svg>
-                                </button>
-                                <button class="action-btn quick-view" title="Schnellansicht" data-product-id="product-2">
-                                    <svg class="icon" viewBox="0 0 24 24">
-                                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="product-info">
-                        <a href="product-detail.html?id=product-2" class="product-name-link">
-                            <h3 class="product-name" data-i18n="product-2-name">Klassisches Hemd</h3>
-                        </a>
-                        <div class="product-price">
-                            <span class="price">€49,99</span>
-                            <span class="old-price">€69,99</span>
-                        </div>
-                        <div class="product-colors">
-                            <span class="color-swatch" style="background-color: #fff;"></span>
-                            <span class="color-swatch" style="background-color: #87CEEB;"></span>
-                            <span class="color-swatch" style="background-color: #F0E68C;"></span>
-                        </div>
-                        <button class="add-to-cart" data-i18n="add-to-cart">In den Warenkorb</button>
-                    </div>
-                </div>
-
-                <!-- Product Card 3 -->
-                <div class="product-card">
-                    <a href="product-detail.html?id=product-3" class="product-image-link">
-                        <div class="product-image">
-                            <div class="product-placeholder">PRODUKT BILD 3</div>
-                            <div class="product-actions">
-                                <button class="action-btn" title="Zur Wunschliste">
-                                    <svg class="icon" viewBox="0 0 24 24">
-                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                                    </svg>
-                                </button>
-                                <button class="action-btn quick-view" title="Schnellansicht" data-product-id="product-3">
-                                    <svg class="icon" viewBox="0 0 24 24">
-                                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="product-info">
-                        <a href="product-detail.html?id=product-3" class="product-name-link">
-                            <h3 class="product-name" data-i18n="product-3-name">Kinder T-Shirt</h3>
-                        </a>
-                        <div class="product-price">
-                            <span class="price">€24,99</span>
-                        </div>
-                        <div class="product-colors">
-                            <span class="color-swatch" style="background-color: #FF6B6B;"></span>
-                            <span class="color-swatch" style="background-color: #4ECDC4;"></span>
-                            <span class="color-swatch" style="background-color: #FFE66D;"></span>
-                        </div>
-                        <button class="add-to-cart" data-i18n="add-to-cart">In den Warenkorb</button>
-                    </div>
-                </div>
-
-                <!-- Product Card 4 -->
-                <div class="product-card">
-                    <a href="product-detail.html?id=product-4" class="product-image-link">
-                        <div class="product-image">
-                            <div class="product-placeholder">PRODUKT BILD 4</div>
-                            <span class="product-badge" style="background-color: #388e3c;" data-i18n="badge-bestseller">BESTSELLER</span>
-                            <div class="product-actions">
-                                <button class="action-btn" title="Zur Wunschliste">
-                                    <svg class="icon" viewBox="0 0 24 24">
-                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-                                    </svg>
-                                </button>
-                                <button class="action-btn quick-view" title="Schnellansicht" data-product-id="product-4">
-                                    <svg class="icon" viewBox="0 0 24 24">
-                                        <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="product-info">
-                        <a href="product-detail.html?id=product-4" class="product-name-link">
-                            <h3 class="product-name" data-i18n="product-4-name">Premium Jeans</h3>
-                        </a>
-                        <div class="product-price">
-                            <span class="price">€119,99</span>
-                        </div>
-                        <div class="product-colors">
-                            <span class="color-swatch" style="background-color: #1a237e;"></span>
-                            <span class="color-swatch" style="background-color: #424242;"></span>
-                            <span class="color-swatch" style="background-color: #000;"></span>
-                        </div>
-                        <button class="add-to-cart" data-i18n="add-to-cart">In den Warenkorb</button>
-                    </div>
+            
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be loaded dynamically via JavaScript -->
+                <div class="loading-spinner" style="grid-column: 1/-1; text-align: center; padding: 40px;">
+                    <div class="loading"></div>
                 </div>
             </div>
         </div>
@@ -366,7 +197,7 @@
             <div class="newsletter-content">
                 <h2 class="newsletter-title" data-i18n="newsletter-title">Bleiben Sie auf dem Laufenden</h2>
                 <p class="newsletter-text" data-i18n="newsletter-text">Melden Sie sich für unseren Newsletter an und erhalten Sie 10% Rabatt auf Ihre erste Bestellung</p>
-                <form class="newsletter-form">
+                <form class="newsletter-form" id="newsletterForm">
                     <input type="email" class="newsletter-input" placeholder="Ihre E-Mail-Adresse" data-i18n-placeholder="email-placeholder" required>
                     <button type="submit" class="newsletter-btn" data-i18n="subscribe">Abonnieren</button>
                 </form>
@@ -379,110 +210,86 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3 data-i18n="about-us">Über Uns</h3>
-                    <p data-i18n="about-text">Zin Fashion bietet hochwertige Mode für die ganze Familie. Qualität, Stil und Nachhaltigkeit stehen bei uns im Mittelpunkt.</p>
+                    <h3 class="footer-title" data-i18n="about-us">Über Uns</h3>
+                    <p class="footer-text" data-i18n="about-text">Zin Fashion bietet hochwertige Mode für die ganze Familie. Qualität, Stil und Nachhaltigkeit stehen bei uns im Mittelpunkt.</p>
                     <div class="social-links">
-                        <a href="#" class="social-link" title="Facebook">
+                        <a href="#" class="social-link" aria-label="Facebook">
                             <svg class="icon" viewBox="0 0 24 24">
                                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                             </svg>
                         </a>
-                        <a href="#" class="social-link" title="Instagram">
+                        <a href="#" class="social-link" aria-label="Instagram">
                             <svg class="icon" viewBox="0 0 24 24">
                                 <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.405a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/>
                             </svg>
                         </a>
-                        <a href="#" class="social-link" title="Twitter">
-                            <svg class="icon" viewBox="0 0 24 24">
-                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                            </svg>
-                        </a>
                     </div>
                 </div>
-
+                
                 <div class="footer-section">
-                    <h3 data-i18n="customer-service">Kundenservice</h3>
+                    <h3 class="footer-title" data-i18n="customer-service">Kundenservice</h3>
                     <ul class="footer-links">
-                        <li><a href="#" data-i18n="shipping">Versand & Lieferung</a></li>
-                        <li><a href="#" data-i18n="returns">Rückgabe & Umtausch</a></li>
-                        <li><a href="#" data-i18n="size-guide">Größentabelle</a></li>
-                        <li><a href="#" data-i18n="faq">FAQ</a></li>
-                        <li><a href="#" data-i18n="contact-us">Kontakt</a></li>
+                        <li><a href="/contact" data-i18n="contact">Kontakt</a></li>
+                        <li><a href="/shipping" data-i18n="shipping-info">Versandinformationen</a></li>
+                        <li><a href="/returns" data-i18n="returns">Rückgabe</a></li>
+                        <li><a href="/size-guide" data-i18n="size-guide">Größentabelle</a></li>
+                        <li><a href="/faq" data-i18n="faq">FAQ</a></li>
                     </ul>
                 </div>
-
+                
                 <div class="footer-section">
-                    <h3 data-i18n="information">Informationen</h3>
+                    <h3 class="footer-title" data-i18n="legal">Rechtliches</h3>
                     <ul class="footer-links">
-                        <li><a href="#" data-i18n="about-link">Über uns</a></li>
-                        <li><a href="#" data-i18n="privacy">Datenschutz</a></li>
-                        <li><a href="#" data-i18n="terms">AGB</a></li>
-                        <li><a href="#" data-i18n="imprint">Impressum</a></li>
-                        <li><a href="#" data-i18n="careers">Karriere</a></li>
+                        <li><a href="/privacy-policy" data-i18n="privacy-policy">Datenschutz</a></li>
+                        <li><a href="/terms" data-i18n="terms">AGB</a></li>
+                        <li><a href="/imprint" data-i18n="imprint">Impressum</a></li>
+                        <li><a href="/gdpr/settings" data-i18n="privacy-settings">Datenschutzeinstellungen</a></li>
                     </ul>
                 </div>
-
+                
                 <div class="footer-section">
-                    <h3 data-i18n="payment-shipping">Zahlung & Versand</h3>
-                    <p data-i18n="payment-methods">Wir akzeptieren:</p>
-                    <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
-                        <span style="padding: 5px 10px; background: var(--bg-secondary); border-radius: 4px;">Visa</span>
-                        <span style="padding: 5px 10px; background: var(--bg-secondary); border-radius: 4px;">Mastercard</span>
-                        <span style="padding: 5px 10px; background: var(--bg-secondary); border-radius: 4px;">PayPal</span>
-                        <span style="padding: 5px 10px; background: var(--bg-secondary); border-radius: 4px;">Klarna</span>
+                    <h3 class="footer-title" data-i18n="payment-methods">Zahlungsmethoden</h3>
+                    <div class="payment-methods">
+                        <svg class="payment-icon" viewBox="0 0 60 40"><path d="M0 0h60v40H0z" fill="#1A1F71"/><path d="M23 16h-3v8h3v-8zm5 0h-3v8h3v-8zm12 0h-8l-1 4-1-4h-7v6l-2-6h-6l-1 3v-3H9v8h3v-3h1l1 3h4l1-4v4h7l1-2h2l1 2h7v-2l1 2h4l-3-4 3-4h-4l-1 2v-2z" fill="#fff"/></svg>
+                        <svg class="payment-icon" viewBox="0 0 60 40"><rect width="60" height="40" rx="4" fill="#EB001B"/><circle cx="20" cy="20" r="12" fill="#F79E1B"/><circle cx="40" cy="20" r="12" fill="#FF5F00"/></svg>
+                        <svg class="payment-icon" viewBox="0 0 60 40"><rect width="60" height="40" rx="4" fill="#003087"/><path d="M25 15h-5l-3 10h5l3-10zm9 0h-5l-3 10h5l3-10z" fill="#009CDE"/></svg>
+                        <svg class="payment-icon" viewBox="0 0 60 40"><rect width="60" height="40" rx="4" fill="#635BFF"/><path d="M15 20h30M20 15v10M25 15v10M35 15v10M40 15v10" stroke="#fff" stroke-width="2"/></svg>
                     </div>
-                    <p style="margin-top: 15px;" data-i18n="shipping-partners">Versandpartner: DHL, UPS</p>
                 </div>
             </div>
-
+            
             <div class="footer-bottom">
-                <p>&copy; 2025 ZIN Fashion. <span data-i18n="all-rights">Alle Rechte vorbehalten</span>.</p>
+                <p class="copyright">&copy; 2024 Zin Fashion. Alle Rechte vorbehalten.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Cart Modal -->
-    <div class="cart-overlay" id="cartOverlay"></div>
-    <div class="cart-modal" id="cartModal">
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
         <div class="cart-header">
-            <h2 class="cart-title" data-i18n="cart-title">Warenkorb</h2>
-            <button class="cart-close" id="cartClose">
-                <svg class="icon" viewBox="0 0 24 24">
-                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
-                </svg>
-            </button>
+            <h3 class="cart-title" data-i18n="cart">Warenkorb</h3>
+            <button class="cart-close" onclick="toggleCart()">×</button>
         </div>
-        
-        <div class="cart-content" id="cartContent">
-            <div class="cart-empty" id="cartEmpty">
-                <svg class="cart-empty-icon" viewBox="0 0 24 24">
-                    <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
-                </svg>
-                <p class="cart-empty-text" data-i18n="cart-empty">Ihr Warenkorb ist leer</p>
-                <button class="cta-btn" onclick="closeCart()" data-i18n="continue-shopping">Weiter einkaufen</button>
-            </div>
-            
-            <div class="cart-items" id="cartItems"></div>
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty" data-i18n="cart-empty">Ihr Warenkorb ist leer</p>
         </div>
-        
-        <div class="cart-footer" id="cartFooter" style="display: none;">
-            <div class="cart-subtotal">
-                <span data-i18n="subtotal">Zwischensumme:</span>
-                <span class="cart-subtotal-price" id="cartSubtotal">€0,00</span>
-            </div>
-            <div class="cart-shipping">
-                <span data-i18n="shipping-cost">Versand:</span>
-                <span class="cart-shipping-price" id="cartShipping" data-i18n="free">Kostenlos</span>
-            </div>
+        <div class="cart-footer" style="display: none;">
             <div class="cart-total">
                 <span data-i18n="total">Gesamt:</span>
-                <span class="cart-total-price" id="cartTotal">€0,00</span>
+                <span class="cart-total-price">€0,00</span>
             </div>
-            <button class="cart-checkout-btn" data-i18n="checkout">Zur Kasse</button>
-            <a href="#" class="cart-view-link" data-i18n="view-cart">Warenkorb anzeigen</a>
+            <a href="/checkout" class="cart-checkout-btn" data-i18n="checkout">Zur Kasse</a>
         </div>
     </div>
 
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay" onclick="toggleMobileMenu()"></div>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 </html>
